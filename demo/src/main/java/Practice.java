@@ -79,5 +79,15 @@ class Solution{
 //        }
 //        in.close();
 
+//        Scanner scan = new Scanner(System.in);
+//        String a;
+//        int i = 1;
+//        while(scan.hasNext())
+//        {
+//            a = scan.nextLine();
+//            System.out.println(i + " " + a);
+//            i++;
+//        }
+
     }
 }
