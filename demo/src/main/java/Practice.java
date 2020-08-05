@@ -170,5 +170,14 @@ class Solution{
 //            }
 //        }
 
+//        static int simpleArraySum(int[] ar) {
+//        int total = 0;
+//
+//        for(int i = 0; i < ar.length; i++) {
+//            total = total + ar[i];
+//        }
+//        return total;
+//    }
+
     }
 }
