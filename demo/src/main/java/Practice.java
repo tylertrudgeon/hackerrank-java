@@ -199,5 +199,17 @@ class Solution{
 //        return ar.reduce((acc, curr) => acc + curr);
 //}
 
+//        function diagonalDifference(arr) {
+//            let leftSum = 0;
+//        let rightSum = 0;
+//        let a = arr.length;
+//        for(let i = 0; i < a; i++){
+//            leftSum += arr[i][i];
+//            rightSum += arr[i][a - 1 - i];
+//        }
+//        return (Math.abs(leftSum - rightSum));
+//}
+
+
     }
 }
