@@ -263,5 +263,24 @@ class Solution{
 //        System.out.print( (sum - max) + " " + (sum - min));
 //    }
 
+//        // Complete the birthdayCakeCandles function below.
+//        static int birthdayCakeCandles(int[] ar) {
+//
+//        int tallest = 0;
+//        int sum = 0;
+//
+//        for(int i = 0; i < ar.length; i++){
+//            int height = ar[i];
+//
+//            if(height > tallest){
+//                tallest = height;
+//                sum = 1;
+//            } else if(height == tallest){
+//                sum ++;
+//            }
+//        }
+//        return sum;
+//    }
+
     }
 }
