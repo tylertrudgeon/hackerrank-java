@@ -282,5 +282,23 @@ class Solution{
 //        return sum;
 //    }
 
+//        /*
+//         * Complete the timeConversion function below.
+//         */
+//        static String timeConversion(String s) {
+//        if(s.substring(8, 10).equals("PM")) {
+//            if(!s.substring(0, 2).equals("12")){
+//                s = (Integer.parseInt(s.substring(0, 2)) + 12) + s.substring(2, 8);
+//            } else {
+//                s = s.substring(0, 8);
+//            }
+//        } else if(s.substring(0, 2).equals("12") && s.substring(8, 10).equals("AM")) {
+//            s = "00" + s.substring(2, 8);
+//        } else {
+//            s = s.substring(0, 8);
+//        }
+//        return s;
+//    }
+
     }
 }
