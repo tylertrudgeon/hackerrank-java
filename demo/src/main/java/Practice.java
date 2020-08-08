@@ -300,5 +300,26 @@ class Solution{
 //        return s;
 //    }
 
+
+//        public static List<Integer> gradingStudents(List<Integer> grades) {
+//        List<Integer> list = new ArrayList<>();
+//        for(int i : grades) {
+//            if (i >= 38) {
+//                if (i % 5 == 3) {
+//                    i += 2;
+//                    list.add(i);
+//                } else if (i % 5 == 4) {
+//                    i += 1;
+//                    list.add(i);
+//                } else {
+//                    list.add(i);
+//                }
+//            } else if (i < 38){
+//                list.add(i);
+//            }
+//        }
+//        return list;
+//    }
+
     }
 }
