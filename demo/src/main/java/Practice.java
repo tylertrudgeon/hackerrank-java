@@ -321,5 +321,22 @@ class Solution{
 //        return list;
 //    }
 
+//        // Complete the countApplesAndOranges function below.
+//        static void countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges) {
+//        int appleCount = 0;
+//        int orangeCount = 0;
+//
+//        for(int i = 0; i < Math.max(apples.length, oranges.length); i++) {
+//            appleCount += isFruitInRange(apples, i, s, t, a);
+//            orangeCount += isFruitInRange(oranges, i, s, t, b);
+//        }
+//
+//        System.out.println(appleCount);
+//        System.out.println(orangeCount);
+//    }
+//
+//        private static int isFruitInRange(int fruits[], int i, int s, int t, int treePos) {
+//        return i < fruits.length && (treePos + fruits[i]) >= s && (treePos + fruits[i]) <= t ? 1 : 0;
+//    }
     }
 }
