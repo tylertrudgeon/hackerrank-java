@@ -348,6 +348,19 @@ class Solution{
 //}
 
 
+//        // Complete the kangaroo function below.
+//        static String kangaroo(int x1, int v1, int x2, int v2) {
+//        String response = "NO";
+//        boolean canCatchUp = (v2 < v1);
+//        if(canCatchUp) {
+//            boolean willIntersectOnLand = (x1 - x2) % (v2 - v1) == 0;
+//            if(willIntersectOnLand) {
+//                response = "YES";
+//            }
+//        }
+//        return response;
+//    }
+
 
 
 //        PIZZA PROJECT FOR OLO
