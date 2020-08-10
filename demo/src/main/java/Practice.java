@@ -338,5 +338,12 @@ class Solution{
 //        private static int isFruitInRange(int fruits[], int i, int s, int t, int treePos) {
 //        return i < fruits.length && (treePos + fruits[i]) >= s && (treePos + fruits[i]) <= t ? 1 : 0;
 //    }
+
+
+//        // Complete the reverseArray function below.
+//        function reverseArray(a) {
+//        return a.reverse();
+//}
+
     }
 }
