@@ -378,6 +378,27 @@ class Solution{
 //    }
 
 
+//        // Complete the breakingRecords function below.
+//        static int[] breakingRecords(int[] scores) {
+//        int highest;
+//        int lowest;
+//        highest = scores[0];
+//        lowest = scores[0];
+//        int[] total = new int[2];
+//
+//        for(int i = 1; i < scores.length; i++) {
+//            if(scores[i] > highest) {
+//                highest = scores[i];
+//                ++total[0];
+//            } else if (scores[i] < lowest) {
+//                lowest = scores[i];
+//                ++total[1];
+//            }
+//        }
+//        return total;
+//    }
+
+
 //        PIZZA PROJECT FOR OLO
 
 //        import java.io.BufferedReader;
