@@ -1,6 +1,9 @@
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -399,6 +402,8 @@ class Solution{
 //    }
 
 
+
+
 //        PIZZA PROJECT FOR OLO
 
 //        import java.io.BufferedReader;
@@ -439,6 +444,70 @@ class Solution{
 //                JSONArray json = readJsonFromUrl("https://www.olo.com/pizzas.json");
 //                System.out.println(json.toString());
 ////        System.out.println(json.get("id"));
+//            }
+//        }
+
+
+//
+//import org.json.JSONArray;
+//import org.json.JSONException;
+//import org.json.JSONObject;
+//import java.io.*;
+//import java.net.URL;
+//import java.nio.charset.StandardCharsets;
+//import java.util.*;
+//
+//        public class PizzaProject {
+//            private static String readAll(Reader rd) throws IOException {
+//                StringBuilder sb = new StringBuilder();
+//                int cp;
+//                while ((cp = rd.read()) != -1) {
+//                    sb.append((char) cp);
+//                }
+//                return sb.toString();
+//            }
+//
+//            public static JSONArray readJsonFromUrl(String url) throws IOException, JSONException {
+//                InputStream is = new URL(url).openStream();
+//                try {
+//                    BufferedReader rd = new BufferedReader(new InputStreamReader(is, StandardCharsets.UTF_8));
+//                    String jsonText = readAll(rd);
+//                    JSONArray json = new JSONArray(jsonText);
+//                    return json;
+//                } finally {
+//                    is.close();
+//                }
+//            }
+//
+//            public static void main(String[] args) throws IOException, JSONException {
+//                JSONArray json = readJsonFromUrl("https://www.olo.com/pizzas.json");
+//
+//                for(int i = 0; i < json.length(); i++) {
+//                    JSONObject topping = json.getJSONObject(i);
+//
+//                    JSONArray ja = topping.getJSONArray("toppings");
+//
+//                    List<String> topping_names = new ArrayList<>();
+//
+//                    List<String> same_toppings = new ArrayList<>();
+//
+//                    for(int j = 0; j < ja.length(); j++) {
+//                        String toppingName = ja.getString(j);
+//                        topping_names.add(toppingName);
+//                    }
+//
+//                    Collections.sort(topping_names);
+//
+//
+//
+//
+//
+////            System.out.println(topping_names);
+////            System.out.println(topping_names.size());
+//                    System.out.println(same_toppings);
+////            System.out.println(likeItems);
+//
+//                }
 //            }
 //        }
 
