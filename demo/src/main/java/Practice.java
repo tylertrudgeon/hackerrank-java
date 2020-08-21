@@ -4,53 +4,53 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
-import java.util.Scanner;
-
-
-class Solution{
-    public static void main(String []arg)
-    {
-
-        Scanner sc = new Scanner(System.in);
-        int t = sc.nextInt();
-
-        for(int i = 0; i < t; i++)
-        {
-
-            try
-            {
-                long x=sc.nextLong();
-                System.out.println(x+" can be fit in:");
-                if(x >= Byte.MIN_VALUE && x <= Byte.MAX_VALUE) {
-                    System.out.println("* byte");
-                }
-                if(x >= Short.MIN_VALUE && x <= Short.MAX_VALUE) {
-                    System.out.println("* short");
-                }
-                if (x >= Integer.MIN_VALUE && x <= Integer.MAX_VALUE) {
-                    System.out.println("* int");
-                }
-                if (x >= Long.MIN_VALUE && x <= Long.MAX_VALUE) {
-                    System.out.println("* long");
-                }
-            }
-            catch(Exception e)
-            {
-                System.out.println(sc.next()+" can't be fit anywhere.");
-            }
-
-        }
-
-        Scanner scan = new Scanner(System.in);
-        int i = scan.nextInt();
-        double d = scan.nextDouble();
-        scan.nextLine();
-        String s = scan.nextLine();
-
-
-        System.out.println("String: " + s);
-        System.out.println("Double: " + d);
-        System.out.println("Int: " + i);
+//import java.util.Scanner;
+//
+//
+//class Solution{
+//    public static void main(String []arg)
+//    {
+//
+//        Scanner sc = new Scanner(System.in);
+//        int t = sc.nextInt();
+//
+//        for(int i = 0; i < t; i++)
+//        {
+//
+//            try
+//            {
+//                long x=sc.nextLong();
+//                System.out.println(x+" can be fit in:");
+//                if(x >= Byte.MIN_VALUE && x <= Byte.MAX_VALUE) {
+//                    System.out.println("* byte");
+//                }
+//                if(x >= Short.MIN_VALUE && x <= Short.MAX_VALUE) {
+//                    System.out.println("* short");
+//                }
+//                if (x >= Integer.MIN_VALUE && x <= Integer.MAX_VALUE) {
+//                    System.out.println("* int");
+//                }
+//                if (x >= Long.MIN_VALUE && x <= Long.MAX_VALUE) {
+//                    System.out.println("* long");
+//                }
+//            }
+//            catch(Exception e)
+//            {
+//                System.out.println(sc.next()+" can't be fit anywhere.");
+//            }
+//
+//        }
+//
+//        Scanner scan = new Scanner(System.in);
+//        int i = scan.nextInt();
+//        double d = scan.nextDouble();
+//        scan.nextLine();
+//        String s = scan.nextLine();
+//
+//
+//        System.out.println("String: " + s);
+//        System.out.println("Double: " + d);
+//        System.out.println("Int: " + i);
 
 //        Scanner sc=new Scanner(System.in);
 //        System.out.println("================================");
@@ -539,7 +539,65 @@ class Solution{
 //                }
 //            }
 //        }
+//
+//
+//    }
+//}
+
+
+
+
+
+
+
+
+
+
+class answers {
+
+    public static void main(String[] args) {
+//        printFooBarBaz();
+    }
+
+    static void printFooBarBaz() {
+
+        for(int i = 1; i < 100; i++) {
+            if(i % 6 == 0) {
+                System.out.println("baz");
+            } else if(i % 2 == 0) {
+                System.out.println("foo");
+            } else if(i % 3 == 0) {
+                System.out.println("bar");
+            } else {
+                System.out.println(i);
+            }
+        }
+
+
+
 
 
     }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
