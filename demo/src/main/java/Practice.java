@@ -1,7 +1,10 @@
+
+import javax.swing.tree.TreeNode;
 import java.io.*;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 //import java.util.Scanner;
@@ -548,19 +551,36 @@ import java.util.List;
 
 
 
+class Node {
+    public int value;
+    public Node left;
+    public Node right;
 
-
-
-
+    public Node(int v) {
+            this.value = v;
+            this.left = null;
+            this.right = null;
+    }
+}
 
 class answers {
 
     public static void main(String[] args) {
-//        printFooBarBaz();
+        printFooBarBaz();
+        System.out.println(reverseCharacters("Tyler is cool."));
+
+        ArrayList<Integer> test = new ArrayList<>();
+        test.add(1);
+        test.add(2);
+        test.add(3);
+        test.add(4);
+        test.add(5);
+        System.out.println(sortedArrayToBST(test).value);
+
     }
 
+//    5 minutes
     static void printFooBarBaz() {
-
         for(int i = 1; i < 100; i++) {
             if(i % 6 == 0) {
                 System.out.println("baz");
@@ -572,11 +592,37 @@ class answers {
                 System.out.println(i);
             }
         }
+    }
 
+//    18 minutes
+    static String reverseCharacters(String input) {
+        String wordList[] = input.split(" ");
+        String reversedWord = "";
 
+        for(String words : wordList) {
+            StringBuilder sb = new StringBuilder(words);
+            sb.reverse();
+            reversedWord += sb.toString() + " ";
+        }
+        return reversedWord;
+    }
 
+//    41 minutes
 
+    static Node sortedArrayToBST(ArrayList<Integer> inputList) {
+        return balancedTree(inputList, 0, inputList.size() - 1);
+    }
 
+    static Node balancedTree(ArrayList<Integer> inputList, int left, int right) {
+        if(left > right) {
+            return null;
+        }
+
+        int mid = (left + right) / 2;
+        Node node = new Node(inputList.get(mid));
+        node.left = balancedTree(inputList, left, mid -1);
+        node.right = balancedTree(inputList, mid + 1, right);
+        return node;
     }
 
 }
