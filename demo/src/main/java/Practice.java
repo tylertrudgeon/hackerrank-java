@@ -546,90 +546,103 @@ import java.util.List;
 //
 //    }
 //}
+//
+//
+//
+//
+//
+//class Node {
+//    public int value;
+//    public Node left;
+//    public Node right;
+//
+//    public Node(int v) {
+//            this.value = v;
+//            this.left = null;
+//            this.right = null;
+//    }
+//}
+//
+//class answers {
+//
+//    public static void main(String[] args) {
+//        printFooBarBaz();
+//        System.out.println(reverseCharacters("Tyler is cool."));
+//
+//        ArrayList<Integer> test = new ArrayList<>();
+//        test.add(1);
+//        test.add(2);
+//        test.add(3);
+//        test.add(4);
+//        test.add(5);
+//        System.out.println(sortedArrayToBST(test).value);
+//
+//    }
+//
+////    5 minutes
+//    static void printFooBarBaz() {
+//        for(int i = 1; i < 100; i++) {
+//            if(i % 6 == 0) {
+//                System.out.println("baz");
+//            } else if(i % 2 == 0) {
+//                System.out.println("foo");
+//            } else if(i % 3 == 0) {
+//                System.out.println("bar");
+//            } else {
+//                System.out.println(i);
+//            }
+//        }
+//    }
+//
+////    18 minutes
+//    static String reverseCharacters(String input) {
+//        String wordList[] = input.split(" ");
+//        String reversedWord = "";
+//
+//        for(String words : wordList) {
+//            StringBuilder sb = new StringBuilder(words);
+//            sb.reverse();
+//            reversedWord += sb.toString() + " ";
+//        }
+//        return reversedWord;
+//    }
+//
+////    41 minutes
+//
+//    static Node sortedArrayToBST(ArrayList<Integer> inputList) {
+//        return balancedTree(inputList, 0, inputList.size() - 1);
+//    }
+//
+//    static Node balancedTree(ArrayList<Integer> inputList, int left, int right) {
+//        if(left > right) {
+//            return null;
+//        }
+//
+//        int mid = (left + right) / 2;
+//        Node node = new Node(inputList.get(mid));
+//        node.left = balancedTree(inputList, left, mid -1);
+//        node.right = balancedTree(inputList, mid + 1, right);
+//        return node;
+//    }
+//
+//}
 
 
-
-
-
-class Node {
-    public int value;
-    public Node left;
-    public Node right;
-
-    public Node(int v) {
-            this.value = v;
-            this.left = null;
-            this.right = null;
-    }
-}
-
-class answers {
-
-    public static void main(String[] args) {
-        printFooBarBaz();
-        System.out.println(reverseCharacters("Tyler is cool."));
-
-        ArrayList<Integer> test = new ArrayList<>();
-        test.add(1);
-        test.add(2);
-        test.add(3);
-        test.add(4);
-        test.add(5);
-        System.out.println(sortedArrayToBST(test).value);
-
-    }
-
-//    5 minutes
-    static void printFooBarBaz() {
-        for(int i = 1; i < 100; i++) {
-            if(i % 6 == 0) {
-                System.out.println("baz");
-            } else if(i % 2 == 0) {
-                System.out.println("foo");
-            } else if(i % 3 == 0) {
-                System.out.println("bar");
-            } else {
-                System.out.println(i);
-            }
-        }
-    }
-
-//    18 minutes
-    static String reverseCharacters(String input) {
-        String wordList[] = input.split(" ");
-        String reversedWord = "";
-
-        for(String words : wordList) {
-            StringBuilder sb = new StringBuilder(words);
-            sb.reverse();
-            reversedWord += sb.toString() + " ";
-        }
-        return reversedWord;
-    }
-
-//    41 minutes
-
-    static Node sortedArrayToBST(ArrayList<Integer> inputList) {
-        return balancedTree(inputList, 0, inputList.size() - 1);
-    }
-
-    static Node balancedTree(ArrayList<Integer> inputList, int left, int right) {
-        if(left > right) {
-            return null;
-        }
-
-        int mid = (left + right) / 2;
-        Node node = new Node(inputList.get(mid));
-        node.left = balancedTree(inputList, left, mid -1);
-        node.right = balancedTree(inputList, mid + 1, right);
-        return node;
-    }
-
-}
-
-
-
-
+//
+//// Complete the migratoryBirds function below.
+//static int migratoryBirds(List<Integer> arr) {
+//        Map<Integer,Integer> map=new TreeMap<>();
+//        for(int element:arr){
+//        if(!map.containsKey(element)){
+//        map.put(element,1);
+//        }
+//        else{
+//        Integer frequency=map.get(element);
+//        map.put(element,frequency+1);
+//        }
+//        }
+//        return Collections.max(map.entrySet(), Map.Entry.comparingByValue()).getKey();
+//        }
 
 
 
