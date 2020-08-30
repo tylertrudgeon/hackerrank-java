@@ -745,6 +745,16 @@ import java.util.List;
 //    }
 //}
 
+//import java.util.*;
+//public class Main{
+//
+//    static Iterator func(ArrayList mylist){
+//        Iterator it=mylist.iterator();
+//        while(it.hasNext()){
+//            String element = it.next().toString();
+//            if(element.equals("###"))
+//
+//                break;
 
 
 
